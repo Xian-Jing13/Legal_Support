@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LEGAL SUPPORT | Solusi Hukum Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            ⚖️ LEGAL <span>SUPPORT</span>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+        </ul>
+
+        <button class="login-btn" onclick="openLogin()">
+            Masuk
+        </button>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <span class="badge">
+            DIGITAL LEGAL SOLUTION
+        </span>
+
+        <h1>
+            Memahami Hukum
+            <span>Jadi Lebih Mudah.</span>
+        </h1>
+
+        <p>
+            LEGAL SUPPORT adalah platform edukasi dan
+            layanan hukum digital yang membantu mahasiswa
+            dan masyarakat memahami persoalan hukum
+            secara sederhana, praktis, dan mudah diakses.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button onclick="scrollToSection('layanan')">
+                Jelajahi Layanan
+            </button>
+
+            <button
+                class="secondary"
+                onclick="scrollToSection('quiz')">
+                Coba Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="scale">
+            ⚖️
+        </div>
+
+        <h3>
+            Sudah tahu hak kamu?
+        </h3>
+
+        <p>
+            Kenali hak dan kewajibanmu melalui
+            informasi hukum yang mudah dipahami.
+        </p>
+
+        <button onclick="startQuiz()">
+            Mulai Sekarang →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- TENTANG -->
+
+<section id="tentang" class="about-section">
+
+    <div class="about-container">
+
+        <div class="about-icon">
+            ⚖️
+        </div>
+
+        <div>
+
+            <span class="section-label">
+                TENTANG LEGAL SUPPORT
+            </span>
+
+            <h2>
+                Hukum Tidak Harus
+                Sulit Dipahami.
+            </h2>
+
+            <p>
+                LEGAL SUPPORT hadir sebagai platform digital
+                yang menghubungkan edukasi hukum dengan
+                kebutuhan masyarakat sehari-hari.
+            </p>
+
+            <p>
+                Kami menyajikan informasi hukum dengan bahasa
+                yang sederhana sehingga pengguna dapat
+                memahami hak, kewajiban, dan dasar-dasar
+                hukum secara lebih mudah.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LAYANAN -->
+
+<section id="layanan" class="section">
+
+    <div class="section-title">
+
+        <span>LAYANAN</span>
+
+        <h2>
+            Solusi hukum dalam
+            satu tempat.
+        </h2>
+
+        <p>
+            Pilih layanan yang kamu butuhkan.
+        </p>
+
+    </div>
+
+
+    <div class="services">
+
+        <div class="service-card"
+             onclick="showFeature('Kamus Hukum')">
+
+            <div class="icon">📚</div>
+
+            <h3>
+                Kamus Hukum
+            </h3>
+
+            <p>
+                Temukan arti istilah hukum
+                dengan bahasa sederhana.
+            </p>
+
+            <span class="service-link">
+                Pelajari →
+            </span>
+
+        </div>
+
+
+        <div class="service-card"
+             onclick="showFeature('Template Dokumen')">
+
+            <div class="icon">📄</div>
+
+            <h3>
+                Template Dokumen
+            </h3>
+
+            <p>
+                Template dokumen hukum sederhana
+                untuk berbagai kebutuhan.
+            </p>
+
+            <span class="service-link">
+                Lihat Template →
+            </span>
+
+        </div>
+
+
+        <div class="service-card"
+             onclick="showFeature('Konsultasi Hukum')">
+
+            <div class="icon">💬</div>
+
+            <h3>
+                Konsultasi Hukum
+            </h3>
+
+            <p>
+                Sampaikan pertanyaan hukum dan
+                temukan informasi yang relevan.
+            </p>
+
+            <span class="service-link">
+                Konsultasi →
+            </span>
+
+        </div>
+
+
+        <div class="service-card"
+             onclick="showFeature('Artikel Hukum')">
+
+            <div class="icon">📰</div>
+
+            <h3>
+                Artikel Hukum
+            </h3>
+
+            <p>
+                Baca artikel hukum dengan
+                bahasa yang mudah dipahami.
+            </p>
+
+            <span class="service-link">
+                Baca Artikel →
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ARTIKEL -->
+
+<section id="artikel" class="section article-section">
+
+    <div class="section-title">
+
+        <span>EDUKASI HUKUM</span>
+
+        <h2>
+            Belajar hukum
+            jadi lebih sederhana.
+        </h2>
+
+    </div>
+
+
+    <div class="articles">
+
+
+        <article>
+
+            <div class="article-image">
+                ⚖️
+            </div>
+
+            <div class="article-content">
+
+                <small>
+                    HUKUM PIDANA
+                </small>
+
+                <h3>
+                    Mengenal Hukum Pidana
+                    dalam Kehidupan Sehari-hari
+                </h3>
+
+                <p>
+                    Memahami konsep dasar hukum pidana
+                    melalui contoh yang dekat dengan
+                    kehidupan masyarakat.
+                </p>
+
+                <button onclick="readArticle(
+                    'Mengenal Hukum Pidana'
+                )">
+                    Baca Artikel →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article>
+
+            <div class="article-image">
+                📜
+            </div>
+
+            <div class="article-content">
+
+                <small>
+                    HUKUM PERDATA
+                </small>
+
+                <h3>
+                    Apa Itu Perjanjian?
+                </h3>
+
+                <p>
+                    Mengenal dasar-dasar perjanjian
+                    yang sering kita temui dalam
+                    kehidupan sehari-hari.
+                </p>
+
+                <button onclick="readArticle(
+                    'Apa Itu Perjanjian'
+                )">
+                    Baca Artikel →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article>
+
+            <div class="article-image">
+                🏛️
+            </div>
+
+            <div class="article-content">
+
+                <small>
+                    HUKUM TATA NEGARA
+                </small>
+
+                <h3>
+                    Mengenal Konstitusi Indonesia
+                </h3>
+
+                <p>
+                    Kenali peran konstitusi dalam
+                    kehidupan bernegara.
+                </p>
+
+                <button onclick="readArticle(
+                    'Mengenal Konstitusi Indonesia'
+                )">
+                    Baca Artikel →
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article>
+
+            <div class="article-image">
+                👨‍⚖️
+            </div>
+
+            <div class="article-content">
+
+                <small>
+                    EDUKASI HUKUM
+                </small>
+
+                <h3>
+                    Mengapa Kita Perlu
+                    Memahami Hukum?
+                </h3>
+
+                <p>
+                    Memahami hukum membantu kita
+                    mengenali hak dan kewajiban
+                    dalam kehidupan sehari-hari.
+                </p>
+
+                <button onclick="readArticle(
+                    'Mengapa Kita Perlu Memahami Hukum'
+                )">
+                    Baca Artikel →
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="pricing-section">
+
+    <div class="section-title center">
+
+        <span>PAKET LAYANAN</span>
+
+        <h2>
+            Pilih paket sesuai kebutuhanmu.
+        </h2>
+
+        <p>
+            Konsep model bisnis LEGAL SUPPORT
+            untuk kebutuhan edukasi dan layanan hukum.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-container">
+
+
+        <div class="pricing-card">
+
+            <h3>FREE</h3>
+
+            <div class="price">
+                Rp0
+                <span>/bulan</span>
+            </div>
+
+            <ul>
+                <li>✓ Kamus Hukum</li>
+                <li>✓ Artikel Hukum</li>
+                <li>✓ Quiz Hukum</li>
+                <li>✓ Informasi Dasar</li>
+            </ul>
+
+            <button onclick="choosePlan('FREE')">
+                Mulai Gratis
+            </button>
+
+        </div>
+
+
+        <div class="pricing-card popular">
+
+            <div class="popular-label">
+                PALING POPULER
+            </div>
+
+            <h3>STUDENT</h3>
+
+            <div class="price">
+                Rp19.000
+                <span>/bulan</span>
+            </div>
+
+            <ul>
+                <li>✓ Semua fitur FREE</li>
+                <li>✓ Template Dokumen</li>
+                <li>✓ E-book Hukum</li>
+                <li>✓ Simulasi Hukum</li>
+            </ul>
+
+            <button onclick="choosePlan('STUDENT')">
+                Pilih Paket
+            </button>
+
+        </div>
+
+
+        <div class="pricing-card">
+
+            <h3>PREMIUM</h3>
+
+            <div class="price">
+                Rp49.000
+                <span>/bulan</span>
+            </div>
+
+            <ul>
+                <li>✓ Semua fitur STUDENT</li>
+                <li>✓ Konsultasi</li>
+                <li>✓ Review Dokumen</li>
+                <li>✓ Template Premium</li>
+            </ul>
+
+            <button onclick="choosePlan('PREMIUM')">
+                Pilih Paket
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUIZ -->
+
+<section id="quiz" class="quiz-section">
+
+    <div class="quiz-container">
+
+        <span>
+            LEGAL QUIZ
+        </span>
+
+        <h2>
+            Seberapa paham kamu
+            tentang hukum?
+        </h2>
+
+        <p>
+            Jawab pertanyaan berikut dan
+            lihat hasilnya.
+        </p>
+
+
+        <div id="quiz-box">
+
+            <div class="quiz-number">
+                Pertanyaan 1 dari 3
+            </div>
+
+            <h3 id="question">
+                Apa fungsi utama hukum?
+            </h3>
+
+            <button onclick="answer(0)">
+                Mengatur kehidupan masyarakat
+            </button>
+
+            <button onclick="answer(1)">
+                Membuat masyarakat takut
+            </button>
+
+            <button onclick="answer(2)">
+                Menghapus semua aturan
+            </button>
+
+        </div>
+
+
+        <div id="quiz-result"></div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        ⚖️ LEGAL <span>SUPPORT</span>
+    </div>
+
+    <p>
+        Know Your Rights. Understand Your Law.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">
+            Beranda
+        </a>
+
+        <a href="#layanan">
+            Layanan
+        </a>
+
+        <a href="#artikel">
+            Artikel
+        </a>
+
+        <a href="#quiz">
+            Quiz
+        </a>
+
+        <a href="#tentang">
+            Tentang
+        </a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 LEGAL SUPPORT.
+        Academic Entrepreneurship Project.
+    </p>
+
+</footer>
+
+
+<!-- NOTIFICATION -->
+
+<div id="notification" class="notification">
+
+    <span id="notification-text"></span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
